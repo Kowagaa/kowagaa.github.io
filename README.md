@@ -11,7 +11,11 @@ Godot
 Ren'Py
 
 Pygame(a bit)
+
 ### What can I code in?
-C#
 
 Python
+
+C#
+
+Rust
