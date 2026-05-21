@@ -14,8 +14,11 @@ Pygame(a bit)
 
 ### What can I code in?
 
-Python
-
-C#
-
-Rust
+- Python
+- Ren'Py
+- Rust
+- C#
+- C++
+- GDScript
+- LOLCODE
+- Brainfuck
