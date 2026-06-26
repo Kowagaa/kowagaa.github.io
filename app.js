@@ -8,28 +8,39 @@ var options = {
     },
     series: [
         {
-            name: "Follower(Family)",
-            data: [15, 25, 38, 55, 69, 83, 99]
+            name: "Snom Cards owned",
+            data: [0]
         }
     ],
     fill: {
-        type: "gradient",
-        gradient: {
-            shadeIntensity: 4,
-            opacityFrom: 0.7,
-            opacityTo: 0.9,
-            stops: [0, 90, 100]
-        }
+    type: "gradient",
+    gradient: {
+        shadeIntensity: 1,
+        type: "vertical",
+        colorStops: [
+            [
+                {
+                    offset: 0,
+                    color: "#348aeb",
+                    opacity: 10.8
+                },
+                {
+                    offset: 70,
+                    color: "#6510F8",
+                    opacity: 0.2
+                },
+                {
+                    offset: 97,
+                    color: "#3e0f8e",
+                    opacity: 0.0
+                }
+            ]
+        ]
+    }
     },
     xaxis: {
         categories: [
-            "01 Jan",
-            "02 Feb",
-            "03 March",
-            "04 April",
-            "05 May",
-            "06 June",
-            "07 July"
+            "6/2026"
         ]
     }
 };
