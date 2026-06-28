@@ -1,4 +1,4 @@
-import ApexCharts from 'apexcharts/ssr'
+//import ApexCharts from 'apexcharts/ssr'
 // Languages chart
 var options1 = {
     chart: {
