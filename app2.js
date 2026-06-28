@@ -1,4 +1,5 @@
-// Languages chart
+
+//Holo Chart
 var options = {
     chart: {
         height: 280,
@@ -13,11 +14,11 @@ var options = {
             data: [4]
         },
         {
-            name: "English Snom Cards owned",
+            name: "Holo Snom Cards owned",
             data: [1]
         },
         {
-            name: "Spanish Snom Cards owned",
+            name: "Non-Holo Snom Cards owned",
             data: [3]
         }
     ],
@@ -55,7 +56,3 @@ var options = {
 }
 var chart = new ApexCharts(document.querySelector("#chart"), options);
 chart.render();
-
-
-
-

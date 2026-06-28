@@ -1,4 +1,5 @@
-// Languages chart
+
+//Type Chart
 var options = {
     chart: {
         height: 280,
@@ -13,12 +14,16 @@ var options = {
             data: [4]
         },
         {
-            name: "English Snom Cards owned",
+            name: "Snom 42/132 [Mega Evolution]",
+            data: [2]
+        },
+        {
+            name: "Snom 45/162 [Temporal Forces]",
             data: [1]
         },
         {
-            name: "Spanish Snom Cards owned",
-            data: [3]
+            name: "Snom 52/217 [Ascended Heroes]",
+            data: [1]
         }
     ],
     fill: {
@@ -55,7 +60,3 @@ var options = {
 }
 var chart = new ApexCharts(document.querySelector("#chart"), options);
 chart.render();
-
-
-
-
