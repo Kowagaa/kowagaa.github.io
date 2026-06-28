@@ -1,3 +1,4 @@
+import ApexCharts from 'apexcharts'
 // Languages chart
 var options = {
     chart: {
@@ -52,8 +53,8 @@ var options = {
             "6/2026"
         ]
     }
-}
-var chart1 = new ApexCharts(document.querySelector("#chart1"), options);
+};
+var chart1 = new ApexCharts(document.querySelector("#chart"), options);
 chart1.render();
 
 

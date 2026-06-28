@@ -1,4 +1,4 @@
-
+import ApexCharts from 'apexcharts'
 //Holo Chart
 var options = {
     chart: {
@@ -53,6 +53,6 @@ var options = {
             "6/2026"
         ]
     }
-}
+};
 var chart2 = new ApexCharts(document.querySelector("#chart2"), options);
 chart2.render();
