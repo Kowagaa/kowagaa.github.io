@@ -170,16 +170,16 @@ var options3 = {
     }
 };
 function HoloChart() {
-    const chart1 = new ApexChart(document.querySelector("#chart"), options1);
+    const chart1 = new ApexChart(document.querySelector("#chart1"), options1);
     chart1.render();
 }
 
 function HoloChart() {
-    const chart2 = new ApexChart(document.querySelector("#two"), options2);
+    const chart2 = new ApexChart(document.querySelector("#chart2"), options2);
     chart2.render();
 }
 
 function SetChart() {
-    const chart3 = new ApexChart(document.querySelector("#three"), options3);
+    const chart3 = new ApexChart(document.querySelector("#chart3"), options3);
     chart3.render();
 }
