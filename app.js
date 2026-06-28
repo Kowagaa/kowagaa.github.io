@@ -173,6 +173,8 @@ var chart1 = new ApexCharts(document.querySelector("#chart"), options[0]);
 var chart2 = new ApexCharts(document.querySelector("#chart"), options[1]);
 var chart3 = new ApexCharts(document.querySelector("#chart"), options[2]);
 chart1.render();
+chart2.render();
+chart3.render();
 
 
 
