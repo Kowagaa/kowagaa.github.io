@@ -54,5 +54,5 @@ var options = {
         ]
     }
 }
-var chart = new ApexCharts(document.querySelector("#chart2"), options);
-chart.render();
+var chart2 = new ApexCharts(document.querySelector("#chart2"), options);
+chart2.render();
