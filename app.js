@@ -92,7 +92,7 @@ var options2 = {
         categories: categories
     },
     fill: {
-        type: "gradient",
+    type: "gradient",
     gradient: {
         shadeIntensity: 1,
         type: "vertical",
@@ -150,3 +150,84 @@ const chart2 = new ApexCharts(document.querySelector("#chart2"), options2);
 chart2.render();
 const chart3 = new ApexCharts(document.querySelector("#chart3"), options3);
 chart3.render();
+
+
+/*
+OLD SNOMS.JSON FILE: {
+    "062026": {
+        "Total": 4,
+        "ByLang": {
+            "en": 1,
+            "es": 3
+        },
+        "ByRarity": {
+            "Holo": 0,
+            "Normal": 3,
+            "ReverseHolo": 1,
+            "IllustrationRare": 0
+        },
+        "ByCard": {
+            "MegaEvolutions": {
+                "42/132": 2
+            },
+            "TemporalForces": {
+                "45/162": 1,
+                "168/162": 0
+            },
+            "AscendedHeroes": {
+                "52/217": 1
+            }
+        }
+    },
+    "072026": {
+        "Total": 13,
+        "ByLang": {
+            "en": 10,
+            "es": 3
+        },
+        "ByRarity": {
+            "Holo": 0,
+            "Normal": 11,
+            "ReverseHolo": 1,
+            "IllustrationRare": 1
+        },
+        "ByCard": {
+            "MegaEvolutions": {
+                "42/132": 10
+            },
+            "TemporalForces": {
+                "45/162": 1,
+                "168/162": 1
+            },
+            "AscendedHeroes": {
+                "52/217": 1
+            }
+        }
+    },
+    "082026": {
+        "Total": 13,
+        "ByLang": {
+            "en": 10,
+            "es": 3
+        },
+        "ByRarity": {
+            "Holo": 0,
+            "Normal": 11,
+            "ReverseHolo": 1,
+            "IllustrationRare": 1
+        },
+        "ByCard": {
+            "MegaEvolutions": {
+                "42/132": 10
+            },
+            "TemporalForces": {
+                "45/162": 1,
+                "168/162": 1
+            },
+            "AscendedHeroes": {
+                "52/217": 1
+            }
+        }
+    }
+}
+*/
