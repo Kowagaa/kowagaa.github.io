@@ -1,5 +1,7 @@
 //import ApexCharts from 'apexcharts/ssr'
 // Languages chart
+const snoms = require('snoms.json');
+
 const categories = [
         "6/2026",
         "7/2026",
