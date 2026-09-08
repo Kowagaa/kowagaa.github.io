@@ -1,4 +1,4 @@
- import jsonData from './snoms.json' assert { type: 'json' };
+import jsonData from './snoms.json' assert { type: 'json' };
 
 const snoms = jsonData;
 
