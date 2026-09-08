@@ -19,6 +19,8 @@ const colorStops = [
             }
         ]
     ]
+
+
 // Languages chart
 var options1 = {
     chart: {
@@ -31,19 +33,19 @@ var options1 = {
     series: [
         {
             name: "Snom Cards Owned",
-            data: snoms.Total
+            data: [0]
         },
         {
             name: "English Snom Cards Owned",
-            data: snoms.ByLang.en
+            data: [0]
         },
         {
             name: "Spanish Snom Cards Owned",
-            data: snoms.ByLang.es
+            data: [0]
         }
     ],
     xaxis: {
-        categories: snoms.Months
+        categories: [0]
     },
     fill: {
     type: "gradient",
@@ -66,27 +68,27 @@ var options2 = {
     series: [
         {
             name: "Snom Cards Owned",
-            data: snoms.Total
+            data: [0]
         },
         {
             name: "Reverse Holo Snom Cards Owned",
-            data: snoms.ByRarity.ReverseHolo
+            data: [0]
         },
         {
             name: "Illustration Rare Snom Cards Owned",
-            data: snoms.ByRarity.IllustrationRare
+            data: [0]
         },
         {
-            nbame: "Holo Snom Cards Owned",
-            data: snoms.ByRarity.Holo
+            name: "Holo Snom Cards Owned",
+            data: [0]
         },
         {
             name: "Normal Snom Cards Owned",
-            data: snoms.ByRarity.Normal
+            data: [0]
         }
     ],
     xaxis: {
-        categories: snoms.Months
+        categories: [0]
     },
     fill: {
     type: "gradient",
@@ -110,27 +112,27 @@ var options3 = {
     series: [
         {
             name: "Snom Cards Owned",
-            data: snoms.Total
+            data: [0]
         },
         {
             name: "Snom 42/132 [Mega Evolution]",
-            data: snoms.ByCard.MegaEvolutions["42/132"]
+            data: [0]
         },
         {
             name: "Snom 45/162 [Temporal Forces]",
-            data: snoms.ByCard.TemporalForces["45/162"]
+            data: [0]
         },
         {
             name: "Snom 52/217 [Ascended Heroes]",
-            data: snoms.ByCard.AscendedHeroes["52/217"]
+            data: [0]
         },
         {
             name: "Snom 168/162 [Temporal Forces]",
-            data: snoms.ByCard.TemporalForces["168/162"]
+            data: [0]
         }
     ],
     xaxis: {
-        categories: snoms.Months
+        categories: [0]
     },
     fill: {
     type: "gradient",
