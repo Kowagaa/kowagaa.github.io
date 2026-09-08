@@ -1,6 +1,6 @@
 import jsonData from './snoms.json' assert { type: 'json' };
 
-const snoms = jsonData;
+const snoms = await jsonData;
 
 
 const colorStops = [
