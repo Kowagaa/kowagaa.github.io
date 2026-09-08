@@ -1,13 +1,8 @@
-//import ApexCharts from 'apexcharts/ssr'
-// Languages chart
-// const snoms = require('snoms.json');
+import jsonData from './snoms.json' assert { type: 'json' };
 
-const categories = [
-        "6/2026",
-        "7/2026",
-        "8/2026",
-        "9/2026"
-    ];
+const snoms = jsonData;
+
+
 const colorStops = [
         [
             {
@@ -27,6 +22,7 @@ const colorStops = [
             }
         ]
     ]
+// Languages chart
 var options1 = {
     chart: {
         height: 280,
@@ -38,19 +34,19 @@ var options1 = {
     series: [
         {
             name: "Snom Cards Owned",
-            data: [4, 13, 13, 13]
+            data: snoms.Total
         },
         {
             name: "English Snom Cards Owned",
-            data: [1, 10, 10, 10]
+            data: snoms.ByLang.en
         },
         {
             name: "Spanish Snom Cards Owned",
-            data: [3, 3, 3, 3]
+            data: snoms.ByLang.es
         }
     ],
     xaxis: {
-        categories: categories
+        categories: snoms.Months
     },
     fill: {
     type: "gradient",
@@ -73,23 +69,27 @@ var options2 = {
     series: [
         {
             name: "Snom Cards Owned",
-            data: [4, 13, 13, 13]
+            data: snoms.Total
         },
         {
             name: "Reverse Holo Snom Cards Owned",
-            data: [1, 1, 1, 1]
+            data: snoms.ByRarity.ReverseHolo
         },
         {
             name: "Illustration Rare Snom Cards Owned",
-            data: [0, 1, 1, 1]
+            data: snoms.ByRarity.IllustrationRare
         },
         {
-            name: "Other Snom Cards Owned",
-            data: [3, 11, 11, 11]
+            nbame: "Holo Snom Cards Owned",
+            data: snoms.ByRarity.Holo
+        },
+        {
+            name: "Normal Snom Cards Owned",
+            data: snoms.ByRarity.Normal
         }
     ],
     xaxis: {
-        categories: categories
+        categories: snoms.Months
     },
     fill: {
     type: "gradient",
@@ -113,27 +113,27 @@ var options3 = {
     series: [
         {
             name: "Snom Cards Owned",
-            data: [4, 13, 13, 13]
+            data: snoms.Total
         },
         {
             name: "Snom 42/132 [Mega Evolution]",
-            data: [2, 10, 10, 10]
+            data: snoms.ByCard.MegaEvolutions["42/132"]
         },
         {
             name: "Snom 45/162 [Temporal Forces]",
-            data: [1, 1, 1, 1]
+            data: snoms.ByCard.TemporalForces["45/162"]
         },
         {
             name: "Snom 52/217 [Ascended Heroes]",
-            data: [1, 1, 1, 1]
+            data: snoms.ByCard.AscendedHeroes["52/217"]
         },
         {
             name: "Snom 168/162 [Temporal Forces]",
-            data: [0, 1, 1, 1]
+            data: snoms.ByCard.TemporalForces["168/162"]
         }
     ],
     xaxis: {
-        categories: categories
+        categories: snoms.Months
     },
     fill: {
     type: "gradient",
@@ -151,83 +151,3 @@ chart2.render();
 const chart3 = new ApexCharts(document.querySelector("#chart3"), options3);
 chart3.render();
 
-
-/*
-OLD SNOMS.JSON FILE: {
-    "062026": {
-        "Total": 4,
-        "ByLang": {
-            "en": 1,
-            "es": 3
-        },
-        "ByRarity": {
-            "Holo": 0,
-            "Normal": 3,
-            "ReverseHolo": 1,
-            "IllustrationRare": 0
-        },
-        "ByCard": {
-            "MegaEvolutions": {
-                "42/132": 2
-            },
-            "TemporalForces": {
-                "45/162": 1,
-                "168/162": 0
-            },
-            "AscendedHeroes": {
-                "52/217": 1
-            }
-        }
-    },
-    "072026": {
-        "Total": 13,
-        "ByLang": {
-            "en": 10,
-            "es": 3
-        },
-        "ByRarity": {
-            "Holo": 0,
-            "Normal": 11,
-            "ReverseHolo": 1,
-            "IllustrationRare": 1
-        },
-        "ByCard": {
-            "MegaEvolutions": {
-                "42/132": 10
-            },
-            "TemporalForces": {
-                "45/162": 1,
-                "168/162": 1
-            },
-            "AscendedHeroes": {
-                "52/217": 1
-            }
-        }
-    },
-    "082026": {
-        "Total": 13,
-        "ByLang": {
-            "en": 10,
-            "es": 3
-        },
-        "ByRarity": {
-            "Holo": 0,
-            "Normal": 11,
-            "ReverseHolo": 1,
-            "IllustrationRare": 1
-        },
-        "ByCard": {
-            "MegaEvolutions": {
-                "42/132": 10
-            },
-            "TemporalForces": {
-                "45/162": 1,
-                "168/162": 1
-            },
-            "AscendedHeroes": {
-                "52/217": 1
-            }
-        }
-    }
-}
-*/
