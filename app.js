@@ -1,4 +1,4 @@
-//const snoms = await import('./snoms.json', { assert: { type: 'json' } });
+const snoms = await import('./snoms.json', { assert: { type: 'json' } });
 
 const colorStops = [
         [
@@ -149,6 +149,7 @@ const chart2 = new ApexCharts(document.querySelector("#chart2"), options2);
 chart2.render();
 const chart3 = new ApexCharts(document.querySelector("#chart3"), options3);
 chart3.render();
+console.log(snoms);
 /*
 chart1.updateSeries([
     {
