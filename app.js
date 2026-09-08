@@ -1,12 +1,4 @@
-import jsonData from './snoms.json' assert { type: 'json' };
-
-const snoms = jsonData;
-
-
-const wait = async () => {
-  await delay(500);
-};
-wait();
+const snoms = await import('./snoms.json', { assert: { type: 'json' } });
 
 const colorStops = [
         [
